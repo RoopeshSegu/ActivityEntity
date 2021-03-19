@@ -1,0 +1,95 @@
+{
+    "id": "PlayKalahaPlayer1Win",
+    "board": {
+        "player": "PLAYER2",
+        "statusOfGame": "Player 1 has won the game, Thanks for playing Kalaha",
+        "kalahaPits": [
+            {
+                "id": 1,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 2,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 3,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 4,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 5,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 6,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 7,
+                "noOfseeds": 34,
+                "bigPit": true,
+                "empty": false
+            },
+            {
+                "id": 8,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 9,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 10,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 11,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 12,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 13,
+                "noOfseeds": 0,
+                "bigPit": false,
+                "empty": true
+            },
+            {
+                "id": 14,
+                "noOfseeds": 26,
+                "bigPit": true,
+                "empty": false
+            }
+        ],
+        "pitIdPointerWhileSowing": 14,
+        "returnGame": false
+    }
+}

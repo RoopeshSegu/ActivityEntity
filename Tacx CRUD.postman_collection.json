@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "3c834531-ee9e-4585-a1ef-e117effbe6f4",
+		"name": "Tacx CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateActivity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Roopesh/Downloads/assignment_activity.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8083/tacx/activity/entity/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"tacx",
+						"activity",
+						"entity",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveActivity",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/tacx/activity/entity/retrieve/?id=<<DOCUMENT_ID>>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"tacx",
+						"activity",
+						"entity",
+						"retrieve",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "<<DOCUMENT_ID>>"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateActivity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recordDef\": \"record\",\r\n    \"time\": \"2011-12-03T10:25:00\",\r\n    \"distance\": 2500,\r\n    \"power\": 150,\r\n    \"cadence\": 83\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/tacx/activity/entity/update/?id=<<DOCUMENT_ID>>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"tacx",
+						"activity",
+						"entity",
+						"update",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "<<DOCUMENT_ID>>"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteActivity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"recordDef\": \"record\",\r\n    \"time\": \"\",\r\n    \"distance\": 600,\r\n    \"power\": 150,\r\n    \"cadence\": 85\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/tacx/activity/entity/delete/?id=<<DOCUMENT_ID>>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"tacx",
+						"activity",
+						"entity",
+						"delete",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "<<DOCUMENT_ID>>"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
